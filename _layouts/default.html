@@ -15,13 +15,11 @@
 <body>
   <div class="wrapper">
     <header class="svt-header">
-      {% if site.logo %}
       <div class="site-logo">
         <a href="https://www.svt.se">
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="/assets/img/svtlogo-white.png" alt="SVT Logotype" />
         </a>
       </div>
-      {% endif %}
       <div class="header-main">
         <h1>
           <a href="{{ " / " | absolute_url }}">√ {{ site.title | default: site.github.repository_name }}</a>
@@ -32,11 +30,6 @@
           <small>SVT</small>
         </a>
       </p>
-      {% if site.github.is_user_page %}
-      <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-      {% endif %}
-
-
     </header>
 
     <section class="svt-section">
