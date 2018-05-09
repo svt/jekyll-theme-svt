@@ -1,0 +1,143 @@
+---
+---
+
+body {
+  font: 24px/1.5 Publik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;   
+  font-family: Publik;
+}
+
+.svt-header {
+    background-color:#410f5a;
+    background-image: url("/assets/img/topbg.jpg");
+    min-height: 190px;
+    width:100%;
+    box-sizing: border-box;
+    color: rgb(240, 240, 240);
+    text-decoration-color: rgb(240, 240, 240);
+    text-decoration: none;
+
+    @media screen and (min-width: 600px) {
+        min-height: 300px;
+    }
+}
+
+.svt-header h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    @media screen and (min-width: 600px) {
+        font-size: 60px;
+    }
+}
+
+.svt-header a {
+    color: rgb(240, 240, 240);
+    text-decoration-color: rgb(240, 240, 240);
+    text-decoration: none;
+    &:hover {
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}
+
+.svt-header .view {
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 125px;
+    @media screen and (min-width: 600px) {
+        top: 230px;
+    }
+}
+
+.site-logo img {
+    max-width: 40px;
+    position: absolute;
+    right: 0px;
+    padding: 30px;
+    @media screen and (min-width: 600px) {
+        max-width: 70px;
+    }
+}
+.footer-logo {
+    max-width: 40px;
+
+    @media screen and (min-width: 600px) {
+        max-width: 70px;
+    }
+}
+
+.header-main {
+    padding: 50px 15px 25px 15px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.svt-header {
+    padding:0;
+}
+
+.svt-footer {
+    width: "100%";
+    padding: 30px;
+    background-color: black;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(240, 240, 240);
+}
+
+.svt-section {
+    padding: 15px;
+    @media screen and (min-width: 600px) {
+        padding: 30px;
+    }
+}
+
+h1, h2, h3 {
+    font: Publik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Publik;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://www.svtstatic.se/resources/svtlib-font/fonts/PublikWeb-Regular_3.woff2")
+            format("woff2"),
+         url("https://www.svtstatic.se/resources/svtlib-font/fonts/PublikWeb-Regular_5.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: Publik;
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://www.svtstatic.se/resources/svtlib-font/fonts/PublikWeb-Bold_5.woff2")
+            format("woff2"),
+        url("https://www.svtstatic.se/resources/svtlib-font/fonts/PublikWeb-Bold_7.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: Publik;
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://www.svtstatic.se/resources/svtlib-font/fonts/PublikWeb-Italic_3.woff2")
+            format("woff2"),
+        url("https://www.svtstatic.se/resources/svtlib-font/fonts/PublikWeb-Italic_5.woff")
+            format("woff");
+}
