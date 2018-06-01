@@ -15,3 +15,7 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 ### Fixed
 - Nothing.
+
+## 0.1.2 - 2018-06-01
+### Added
+- Optional menu

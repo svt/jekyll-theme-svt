@@ -1,5 +1,134 @@
+--- 
 ---
----
+.navigation {
+    background-color: black;
+    height: 40px;
+    @media screen and (min-width: 600px) {
+        height: 50px;
+    }
+}
+.menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;  
+  -webkit-user-select: none;
+  user-select: none;
+  
+  width: 100%;
+  height: 60px;
+}
+
+.menu-icon {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-icon-line {
+  background: #ffffff;
+  border-radius: 9px;
+  display: block;
+  position: relative;
+  height: 4px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+  width: 35px;
+  margin: 4px;
+}
+
+.menu {
+  position: absolute;
+  background-color: black;
+  display: none;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: outside;
+  left: 0px;
+  right: 0px;
+  top: -24px;
+
+  & li {
+    float: none;   
+    & a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding: 10px 15px
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    float: right;
+
+    & li {
+      float: left;
+      & a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding: 10px 15px
+      }
+    }
+  }
+}
+
+.menuToggleCheckbox {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 3; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+  
+
+  &:checked ~ {
+    & .menu {
+      display: block;
+    }
+
+    & .menu-icon .menu-icon-line {
+      margin: 0px;
+
+      &:nth-child(1) {
+          margin: 6px;
+          width: 0%;
+      }
+
+      &:nth-child(2) {
+          transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+          transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+          margin: 6px;
+          width: 0%;
+      }        
+    }
+  }
+  @media screen and (min-width: 600px) {
+    ~ {
+      & .menu {
+        display: block;
+      }
+      & .menu-icon {
+        display: none;
+      }
+      & .menuToggleCheckbox {
+        display: none;
+      }
+    }   
+  }
+}
 
 body {
   font: 24px/1.5 Publik, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,13 +181,19 @@ body {
     }
 }
 
-.site-logo img {
-    max-width: 40px;
+.site-logo {
+    display: block;
     position: absolute;
-    right: 0px;
-    padding: 30px;
-    @media screen and (min-width: 600px) {
-        max-width: 70px;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    & img {
+        max-width: 40px;
+        float: left;
+        right: 0px;
+        @media screen and (min-width: 600px) {
+            max-width: 70px;
+        }
     }
 }
 .footer-logo {
@@ -70,12 +205,7 @@ body {
 }
 
 .header-main {
-    padding: 50px 5px 25px 5px;
     text-align: center;
-    @media screen and (min-width: 600px) {
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
 }
 
 .wrapper {

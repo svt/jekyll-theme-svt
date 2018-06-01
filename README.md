@@ -20,6 +20,18 @@ You can find the source code for Jekyll at GitHub:
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
+Optionally define a menu in a menu.yml file in the _data directory.
+
+'''
+menuItems:
+- title: Why
+  url: why
+- title: What
+  url: what
+- title: How
+  url: how
+'''
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
