@@ -22,7 +22,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 Optionally define a menu in a menu.yml file in the _data directory.
 
-'''
+```
 menuItems:
 - title: Why
   url: why
@@ -30,7 +30,7 @@ menuItems:
   url: what
 - title: How
   url: how
-'''
+```
 
 ## Contributing
 
