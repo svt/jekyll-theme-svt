@@ -51,14 +51,12 @@
   list-style-position: outside;
   left: 0px;
   right: 0px;
-  top: -24px;
+  top: -20px;
 
   & li {
-    float: none;   
+    float: none;
     & a {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding: 10px 15px
+      padding: 10px 15px;
     }
   }
 
@@ -68,9 +66,7 @@
     & li {
       float: left;
       & a {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding: 10px 15px
+
       }
     }
   }
@@ -102,10 +98,12 @@
       }
 
       &:nth-child(2) {
+          top: 2px;
           transform: rotate(45deg);
       }
 
       &:nth-child(3) {
+          top: -2px;
           transform: rotate(-45deg);
       }
 
@@ -119,6 +117,7 @@
     ~ {
       & .menu {
         display: block;
+        left: -46px;
       }
       & .menu-icon {
         display: none;
@@ -184,14 +183,15 @@ body {
 .site-logo {
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 3px;
     z-index: 2;
     & img {
         max-width: 40px;
-        float: left;
-        right: 0px;
-        @media screen and (min-width: 600px) {
+    }
+    @media screen and (min-width: 600px) {
+        top: 5px;
+        & img {
             max-width: 70px;
         }
     }
