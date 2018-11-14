@@ -232,6 +232,16 @@ body {
     }
 }
 
+a {
+    font-weight: 400;
+    text-decoration: none;
+    &:hover {
+        font-weight: 400;
+        text-decoration: underline;
+    }
+
+}     
+
 h1, h2, h3 {
     font: Publik, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
