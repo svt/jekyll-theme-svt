@@ -139,7 +139,7 @@ body {
 
 .svt-header {
     background-color:#410f5a;
-    background-image: url("../img/topbg.jpg");
+//    background-image: url("../img/topbg.jpg");
     min-height: 190px;
     width:100%;
     box-sizing: border-box;
@@ -148,7 +148,7 @@ body {
     text-decoration: none;
 
     @media screen and (min-width: 600px) {
-        min-height: 300px;
+        min-height: 220px;
     }
 }
 
