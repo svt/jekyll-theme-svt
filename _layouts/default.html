@@ -43,28 +43,27 @@
             <span class="menu-icon-line"></span>
           </div>
           <ul class="menu">
+		<li class="site-logo">
+		  <a href="https://omoss.svt.se/about-svt.html">
+		    <img src="./assets/img/svtlogo-white.png" alt="SVT Logotype" /></a>
+		</li>
             {% for item in site.data.menu.menuItems %}
               <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
         {% endif %}
-        <div class="site-logo">
-          <a href="https://www.svt.se">
-            <img src="./assets/img/svtlogo-white.png" alt="SVT Logotype" />
-          </a>
-        </div>
     </nav>
       <div class="header-main">
         <h1>
           <a href="{{"https://www.svt.se/opensource" | absolute_url }}">√ {{ site.title | default: site.github.repository_name }}</a>
         </h1>
       </div>
-      <p class="view">
-        <a href="https://github.com/SVT">GitHub
+     <!-- <p class="view">
+        <a href="https://github.com/svt">GitHub
           <small>SVT</small>
         </a>
-      </p>
+     </p>-->
     </header>
 
     <section class="svt-section">
