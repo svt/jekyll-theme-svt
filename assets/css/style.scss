@@ -130,7 +130,7 @@
 }
 
 body {
-  font: 24px/1.5 Publik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 18px/1.5 Publik, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;   
@@ -138,6 +138,9 @@ body {
 }
 
 .svt-header {
+	
+  font-size: 24px;
+  font-weight: 400;
     background-color:#410f5a;
 //    background-image: url("../img/topbg.jpg");
     min-height: 190px;
